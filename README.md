@@ -76,60 +76,176 @@ Medical AI 모델링과 실제 AI 소프트웨어 개발 경험을 보유하고 
 
 **인제대학교 · Medical AI / 의료정보학**
 
-의료 AI 모델의 성능뿐 아니라
-외부 환경에서의 generalization, operating policy, selective prediction 및 failure mode를 중심으로 연구하고 있습니다.
+의료 AI 모델의 평균적인 성능뿐 아니라 외부 환경에서의 generalization,
+operating policy, selective prediction 및 failure mode를 중심으로 연구하고 있습니다.
 
-### 주요 연구
+다양한 의료 AI 연구에서 다음과 같은 방법론을 다뤄 왔습니다.
 
-- **응급실·중환자실 위험예측 AI**
-  - Calibration
-  - Selective Prediction
-  - Three-way Deferral Policy
-  - Workload-constrained decision policy
-  - Failure / regression analysis
+- Distribution Shift
+- Calibration
+- Threshold Transfer
+- Selective Prediction
+- Deferral Policy
+- Failure / Regression Analysis
+- Reproducible Evaluation
 
-- **근골격계 X-ray AI**
-  - MURA 기반 anatomy-specific reliability 연구
-  - Pediatric wrist external-domain stress testing
-  - Threshold–workload analysis
-  - Aggregation sensitivity analysis
+### KCI 등재 논문 · 제1저자
 
-- **Mammography AI**
-  - CBIS-DDSM / CMMD
-  - Dataset shift
-  - Threshold transfer
-  - Operating-policy fragility 분석
+#### 1. 의료 영상 언어 모델의 지식 및 구조적 정렬에 관한 기술 고찰  
+**흉부 X-ray 표현형 탐색과 예후 분석을 중심으로**
 
-- **Chest X-ray / Pneumothorax AI**
-  - Cross-dataset evaluation
-  - False-negative / false-positive analysis
-  - Safety-oriented reliability evaluation
+- 유다영, 이승진, 양진홍
+- 한국정보전자통신기술학회 논문지
+- 2025, Vol. 18, No. 5, pp. 399–408
+- DOI: `10.17661/jkiiect.2025.18.5.399`
+- **KCI 등재 · 제1저자**
+
+Medical Vision-Language Model의 의료영상 표현과 지식·구조적 정렬을 중심으로
+기술적 발전 방향과 활용 가능성을 고찰한 연구입니다.
+
+#### 2. XGBoost 기반 K-Means 군집 분석을 활용한 심장질환 예측 및 표현형 연구
+
+- 유다영, 양진홍
+- 한국정보전자통신기술학회 논문지
+- 2025, Vol. 18, No. 3, pp. 172–182
+- DOI: `10.17661/jkiiect.2025.18.3.172`
+- **KCI 등재 · 제1저자**
+
+XGBoost 기반 심장질환 위험예측과 K-Means clustering을 결합하여
+환자의 위험 표현형과 이질성을 분석한 연구입니다.
+
+#### 3. 유방암 분류를 위한 합성곱 신경망 및 랜덤 포레스트 분류기의 비교 연구
+
+- 유다영, 양진홍
+- 한국정보전자통신기술학회 논문지
+- 2024, Vol. 17, No. 6, pp. 576–583
+- **KCI 등재 · 제1저자**
+
+유방 초음파 영상에서 CNN과 Random Forest의 분류 성능을 비교하여
+의료영상 분류 모델의 성능과 특성을 분석한 연구입니다.
+
+---
+
+### 주요 Medical AI 연구
+
+#### ED / ICU Risk Prediction
+
+응급실 및 중환자실 위험예측 환경에서 calibration과
+workload-constrained selective decision을 연구했습니다.
+
+주요 연구 주제:
+
+- Calibration
+- Selective Prediction
+- Three-way Deferral Policy
+- Workload-constrained Decision Policy
+- False-positive / Missed-positive Analysis
+- Failure / Regression Analysis
+
+단순한 discrimination 성능뿐 아니라,
+환자를 자동 판정할지 추가 검토 대상으로 보낼지에 따라
+failure pattern이 어떻게 변화하는지를 분석했습니다.
+
+---
+
+#### Musculoskeletal Radiograph Reliability
+
+MURA와 pediatric wrist domain을 활용하여
+근골격계 X-ray AI의 anatomy-specific reliability와 external-domain robustness를 연구했습니다.
+
+주요 연구 주제:
+
+- MURA Cross-validation
+- Pediatric Wrist Domain Stress Testing
+- Anatomy-specific Reliability
+- Threshold–Workload Analysis
+- Aggregation Sensitivity
+- Failure Persistence
+
+전체 평균 성능만으로 평가하지 않고,
+해부학적 부위와 외부 domain에 따라 모델 reliability가 어떻게 달라지는지를 분석했습니다.
+
+---
+
+#### Mammography Reliability
+
+CBIS-DDSM과 CMMD를 활용하여
+public mammography dataset 간 distribution shift와
+threshold-transfer reliability를 연구했습니다.
+
+주요 연구 주제:
+
+- Dataset Shift
+- Threshold Transfer
+- Operating-point Nontransportability
+- Specificity / Sensitivity Failure
+- External-domain Reliability
+
+한 데이터셋에서 설정한 operating threshold가
+다른 데이터셋에서도 동일한 동작을 유지하는지를 검증하고,
+dataset shift에서 발생하는 operating-policy fragility를 분석했습니다.
+
+---
+
+#### Chest X-ray / Pneumothorax Screening
+
+흉부 X-ray 기반 Pneumothorax screening 모델을 대상으로
+cross-dataset reliability와 safety-oriented failure를 분석했습니다.
+
+주요 연구 주제:
+
+- Cross-dataset Evaluation
+- False-negative / False-positive Analysis
+- Threshold-oriented Reliability
+- Failure-oriented Evaluation
+- Safety-oriented Screening Policy
+
+평균적인 모델 성능뿐 아니라 screening 환경에서 발생할 수 있는
+unsafe miss와 threshold-dependent behavior를 중심으로 평가했습니다.
+
+---
 
 ### LLM 연구
 
-- Base LLM과 Instruction-tuned LLM 비교 연구
-- 한국어·영어 task 기반 성능 평가
-- Output quality 및 format failure 분석
-- No-response / truncation 분석
-- Task-level regression 및 catastrophic failure 분석
-- Inference cost 비교
+Base LLM과 Instruction-tuned LLM을 비교하여
+평균 성능뿐 아니라 모델 변경으로 인해 새롭게 발생하는 failure를 분석했습니다.
 
-### 연구 관심 분야
+주요 평가 요소:
+
+- Output Quality
+- Format Failure
+- No-response
+- Output Truncation
+- Task-level Regression
+- Catastrophic Failure
+- Inference Cost
+
+평균 성능 개선이 특정 task의 새로운 failure를 가릴 수 있다는 점에 주목하여,
+aggregate performance와 individual failure를 함께 평가하는 연구를 수행했습니다.
+
+---
+
+### Research Interests
 
 - Medical AI Reliability
 - Distribution Shift
 - Calibration
 - Selective Prediction
 - Deferral Policy
+- Threshold / Operating Policy
 - LLM Evaluation
 - Failure Analysis
 - Sequential Decision-Making
 
+### N.O.V.A. Contribution
+
+**Differential-state Design · Next-action Policy · Stopping Policy ·  
+Failure / Regression Analysis · Ablation · Reproducible Evaluation ·  
+Technical Coordination**
+
 ### Public Research Profile
 
-- ORCID: https://orcid.org/0009-0001-7287-751X
-
----
+- ORCID: `0009-0001-7287-751X`
 
 ## 이승협
 ### 개발 · Healthcare AI & Competition

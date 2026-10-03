@@ -7,7 +7,7 @@ N.O.V.A. 2026 Doctor Agent 개발에 참여합니다.
 
 ---
 
-## 정택수, RN
+## 정택수(RN)
 ### 기획 · Clinical Research & Digital Healthcare
 
 **前 가톨릭관동대학교 국제성모병원 재활의학과**

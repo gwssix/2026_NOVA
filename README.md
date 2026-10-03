@@ -45,8 +45,7 @@ Medical AI 모델링과 실제 AI 소프트웨어 개발 경험을 보유하고 
 ### 2026
 
 - **이질적 다기관 환경에서의 당뇨망막병증 분류 및 일반화 방법론 제안 연구**
-  - IEEE Journal of Biomedical and Health Informatics
-  - **Under Review**
+  - IEEE Journal of Biomedical and Health Informatics (**Under Review**)
 
 - **연합학습 기반 다기관 안저분류 모델 연구**
   - 대한전자공학회 포스터 발표
